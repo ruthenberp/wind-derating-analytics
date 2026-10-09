@@ -167,7 +167,7 @@ def load_and_process_data(folder_path="/content/drive/MyDrive/Data/"):
     return df, temps, p_cap_q0, p_cap_qmid, p_cap_qmax, audit
 
 # Load Processed Telemetry Data & Audit Summary
-data_dir = "/content/drive/MyDrive/Data/"
+data_dir = "./"
 df, temps, p_cap_q0, p_cap_qmid, p_cap_qmax, audit = load_and_process_data(data_dir)
 
 # ==========================================

@@ -199,7 +199,7 @@ if audit["density_flag_count"] > 0:
 # DASHBOARD HEADER & KPI METRICS
 # ==========================================
 st.title("Wind Turbine Thermal & Reactive Power Derating Analytics")
-st.caption("Distribution Customer Concepts 774 | Active power yield curtailment evaluation.")
+st.caption("Multi-year wind telemetry audit & active power yield curtailment evaluation.")
 
 mwh_loss = df[active_loss_col].sum() * (10 / 60) / 1000
 derate_records = (df[active_loss_col] > 0).sum()

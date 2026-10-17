@@ -209,7 +209,7 @@ max_temp = df["Temperature_C"].max()
 col1, col2, col3, col4 = st.columns(4)
 col1.metric("Cumulative Yield Loss", f"{mwh_loss:.2f} MWh")
 col2.metric("Curtailment Duration", f"{derate_hours:.1f} Hours")
-col3.metric("Curtailment Events", f"{derate_records:,} Timestamps")
+col3.metric("Curtailment Events", f"{derate_records:,}")
 col4.metric("Peak Ambient Temp", f"{max_temp:.1f} °C")
 
 # ==========================================

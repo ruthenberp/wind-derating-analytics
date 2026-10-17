@@ -246,7 +246,7 @@ fig_cap.add_trace(go.Scatter(x=temps, y=p_cap_qmax, mode="lines+markers", name="
 fig_cap.update_layout(xaxis_title="Ambient Temperature (°C)", yaxis_title="Active Power Cap (kW)", template="plotly_white")
 st.plotly_chart(fig_cap, use_container_width=True)
 
-st.subheader("2. Power-Curve Active Power Output with Thermal Color-Mapping")
+st.subheader("2. Power-Curve Active Power Output with Thermal Colour-Mapping")
 filtered_df = df[df["Temperature_C"] >= temp_cutoff]
 fig_pc = go.Figure()
 fig_pc.add_trace(go.Scatter(

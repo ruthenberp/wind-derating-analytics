@@ -253,7 +253,14 @@ fig_pc.add_trace(go.Scatter(
     x=filtered_df["Free_Wind_Speed_m_s"],
     y=filtered_df[active_pnet_col],
     mode="markers",
-    marker=dict(size=2, opacity=0.55, color=filtered_df["Temperature_C"], colorscale="RdBu_r", showscale=True, colorbar=dict(title="Air temp (°C)")),
+    marker=dict(
+        size=2.5,  # Slightly increased size for better visibility
+        opacity=0.7, 
+        color=filtered_df["Temperature_C"], 
+        colorscale="Plasma",  # Changed from "RdBu_r" to a high-contrast sequential map
+        showscale=True, 
+        colorbar=dict(title="Air temp (°C)")
+    ),
     text=filtered_df["Timestamp"],
     hovertemplate="Timestamp: %{text}<br>Wind Speed: %{x:.2f} m/s<br>Active Power: %{y:.1f} kW<br>Air Temp: %{marker.color:.1f} °C<extra></extra>"
 ))
